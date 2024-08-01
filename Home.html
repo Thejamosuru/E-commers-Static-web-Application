@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT CLUB-Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    header{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+    }
+    header section{
+        flex:1;
+    }
+    header section img{
+        font-size: 10px;
+    }
+    header nav{
+        flex: 9;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        flex: 1;
+        list-style:none;
+    }header nav ul li a{
+        text-decoration:none;
+        color:black;
+    }
+    header nav ul li a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    header div{
+        flex: 3;
+    }
+    header div i{
+        margin:10px;
+    }
+    .cnt{
+        transform: rotate(270deg);
+        position: fixed;
+        top: 300px;
+        left: 1260px;
+        width: 130px;
+        height: 30px;
+        background: orange;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .chair{
+        display: flex;
+        margin:150px 100px 50px 100px;
+        justify-content: space-evenly;
+    }
+    .col{
+        font-size: 25px;
+        color: gray;
+    }
+    .chair div b{
+        font-size: 50px;
+    }
+    .dol{
+        line-height:25px;
+    }
+    .add{
+        display: flex;
+        margin-top:50px;
+    }
+    .card{
+        margin:5px 20px 0px 0px;
+        width: 140px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background:orange;
+        color: white;
+    }
+    .chair img{
+        height: 280px;
+        width: 350px;
+    }
+    .arm{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        margin: 200px 60px 100px 100px;
+    }
+    .stool{
+        display: flex;
+        border: 2px solid skyblue;
+        margin:10px;
+        align-items: center;
+        padding: 10px;
+        background: skyblue;
+    }
+    .atque{
+        border: 2px solid skyblue;
+        margin:10px;
+        text-align: center;
+        background: skyblue;
+        padding:50px 0px 0px 0px;
+    }
+    section main div{
+        margin-left: 50px;
+    }
+    section main div button{
+        background: orange;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        width: 140px;
+    }
+    .cha{
+        font-size: 30px;
+        font-weight:bolder;
+    }
+    .chai{
+        font-size: 20px;
+    }
+    .chairs{
+        margin: 100px 0px;
+    }
+    .chars{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+    .zoom{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        padding:20px;
+        transition: all 1s linear;
+    }
+    .zoom:hover{
+        transform: scale(1.2);
+    }
+    .bgim{
+        background: url(./images/home/sofa-collection-banner.jpg);
+        height:420px;
+        background-size: 100%;
+        margin: 150px 0px;
+    }
+    .sofa{
+        position:relative;
+        left: 100px;
+        top:120px;
+        color: white;
+    }
+    .cost{
+        display: flex;
+        margin: 0px 250px 0px 200px;
+    }
+    .inc>img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .blog{
+        display: flex;
+        margin: 100px 50px ;
+    }
+    .brand{
+        font-size:20px;
+        margin:50px 0px 20px;
+        font-weight:bolder;
+    }
+    .brand:hover{
+        color: orange;
+    }
+    .images{
+        text-align: center;
+        background: gray;
+        height: 200px;
+        margin-bottom: 150px;
+    }
+    .images>img{
+        margin: 50px 70px;
+        height: 100px;
+        width: 100px;
+    }
+    .foot{
+        display: flex;
+        font-size: 20px;
+        margin:0px 70px 0px 200px;
+    }
+    footer section div{
+        margin:30px;
+    }
+    footer section div ul{
+        list-style:none;   
+    }
+    footer section div ul li:hover{
+        translate:20px;
+        color:orange;
+        cursor: pointer;
+    }
+    .bun{
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background:orange;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+    }
+    .icons{
+        text-align: center;
+        background:aliceblue;
+        padding: 10px;
+        height: 150px;
+    }
+    footer section nav i{
+        margin: 20px;
+    }
+    footer section nav i:hover{
+        color: orange;
+    }
+    .ph{
+        display: flex;
+    }
+    .gray{
+        color:lightslategray;
+        word-spacing: 10px;
+    }
+    .phn{
+        font-size: 20px;
+        text-align: center;
+        color:lightslategray;
+        word-spacing:5px;
+    }
+</style>
+</head>
+<body class="global">
+    <!-- header portion starts -->
+    <header>
+        <section>
+            <img src="./images/home/logo.png" alt="logo" style="width: 230px;">
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/About.html">About</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Service.html">Services</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+    </header>
+    <!-- header portion ends -->
+    <!-- body portion starts -->
+    <button class="cnt">Contact me</button>
+    <section class="chair">
+        <div>
+            <p class="col">Great Desing Collection</p>
+            <b>Valvet Accent Arm Chair</b>
+            <p class="dol">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia possimus placeat impedit?<br>Iure temporibus, harum, maiores corporis atque inventore, architecto iusto ab ipsam odit et<br>natus minima! Non, consequatur ut!</p>
+            <p> ___$399.00 $499.00</p>
+            <div class="add">
+                <button class="card">Add to card</button>
+                <p>More info</p>
+            </div>
+        </div>
+        <img src="./images/home/slider3.png" alt="">
+    </section>
+    <section class="arm">
+        <div class="atque">
+            <img src="./images/home/p1.png" alt="">
+            <p class="cha">Arm Chair</p>
+            <p class="chai">atque inventore, architecto iusto<br>ab ipsam odit et natus minima!<br>Non, consequatur ut!</p>
+        </div>
+        <main class="stool">
+            <img src="./images/home/p2.png" alt="">
+            <div>
+                <p class="cha">Latest Desing Stool And Chair</p>
+                <p class="chai">atque inventore, architecto iusto ab ipsam odit<br>et natus minima! Non, consequatur ut!</p>
+                <p class="cha">Sales Strat From <>$99.00</p>
+                <button>Discover more</button>
+            </div>
+        </main>
+        <div class="atque">
+            <img src="./images/home/p3.png" alt="">
+            <p class="cha">Arm Chair</p>
+            <p class="chai">atque inventore, architecto iusto<br> ipsam odit et natus minima!<br>Non, consequatur ut!</p>
+        </div>
+    </section>
+    <p style="text-align: center; font-weight: bold; font-size: 50px;">New Arrivals</p>
+    <section class="chairs">
+        <div class="chars">
+            <figure class="zoom">
+                 <img src="./images/home/arrivals1.png" alt="">
+                 <figcaption>Wooden Chair<br>$65.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals2.png" alt="">
+                <figcaption>Singel Arm Chair<br>$80.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals3.png" alt="">
+                <figcaption>Wooden Arm Chair<br>$40.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals4.png" alt="">
+                <figcaption>Stylish Chair<br>$100.00</figcaption>
+            </figure>
+        </div>
+        <div class="chars">
+            <figure class="zoom">
+                <img src="./images/home/arrivals5.png" alt="">
+                <figcaption>Morden Chair<br>$120.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals6.png" alt="">
+                <figcaption>Arm Chair<br>$90.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals7.png" alt="">
+                <figcaption>Arm Chair<br>$90.00</figcaption>
+            </figure>
+            <figure class="zoom">
+                <img src="./images/home/arrivals8.png" alt="">
+                <figcaption>Wooden bed<br>$140.00</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="bgim">
+        <b class="sofa" style="font-size:40px;">Unlimited Sofa Collection</b>
+        <p class="sofa" style="font-size: 20px;line-height:30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet deleniti odio<br>explicabo asperiores quod alias atque, eius facilis quae saepe. Deleniti animi<br>nostrum possimus totam quas! Vitae distinctio ipsa tenetur?<br>Strats from <>$199.00</p>
+        <button class="sofa" style="width: 130px; height:40px;border-radius: 10px;background: orange;border: none;">View More</button>
+    </section>
+    <p style="text-align: center; font-weight: bold;font-size: 50px;margin-bottom:100px;">FEATUERD PRODUCTS</p>
+    <section >
+        <div class="cost">
+            <figure class="inc">
+                <img src="./images/home/f1.jpg" alt="">
+                <figcaption>Desinged Sofa<br>$ 160.00</figcaption>
+            </figure>
+            <figure class="inc">
+                <img src="./images/home/f2.jpg" alt="">
+                <figcaption>Dining Tabel<br>$ 200.00</figcaption>
+            </figure>
+            <figure class="inc">
+                <img src="./images/home/f3.jpg" alt="">
+                <figcaption>Chair and tabel<br>$ 100.00</figcaption>
+            </figure>
+            <figure class="inc">
+                <img src="./images/home/f4.jpg" alt="">
+                <figcaption>Modern Arm Chair<br>$ 299.00</figcaption>
+            </figure>
+        </div>
+    </section>
+    <p style="margin:50px 0px;text-align: center;font-size:40px;font-weight: bold;"> Latest Blog</p>
+    <section class="blog">
+        <figure>
+            <img src="./images/home/b1.jpg" alt="">
+            <p class="brand">Why Brands Are looking at<br>Local Languages</p>
+            <p>By Robert Nearby/18th Marth 2018</p>
+            <p>Lorem ipsum dolor sit amet<br>consectetur, adipisicing elit. Cum<br>nobis enim esse earum a dolores<br>sapiente recusandae officia placeat<br>cupiditate tenetur.</p>
+        </figure>
+        <figure>
+            <img src="./images/home/b2.jpg" alt="">
+            <p class="brand">Why Brands Are looking at<br>Local Languages</p>
+            <p>By Robert Nearby/18th Marth 2018</p>
+            <p>Lorem ipsum dolor sit amet<br>consectetur, adipisicing elit. Cum<br>nobis enim esse earum a dolores<br>sapiente recusandae officia placeat<br>cupiditate tenetur.</p>
+        </figure>
+        <figure>
+            <img src="./images/home/b3.jpg" alt="">
+            <p class="brand">Why Brands Are looking at<br>Local Languages</p>
+            <p>By Robert Nearby/18th Marth 2018</p>
+            <p>Lorem ipsum dolor sit amet<br>consectetur, adipisicing elit. Cum<br>nobis enim esse earum a dolores<br>sapiente recusandae officia placeat<br>cupiditate tenetur.</p>
+        </figure>
+    </section>
+    <section class="images">
+        <img src="./images/home/c1.png" alt="">
+        <img src="./images/home/c2.png" alt="">
+        <img src="./images/home/c3.png" alt="">
+        <img src="./images/home/c4.png" alt="">
+        <img src="./images/home/c5.png" alt="">
+
+    </section>
+    <!-- body portion ends -->
+    <!-- footer portion starts -->
+    <Footer>
+        <section class="foot">
+        <div class="inf">
+            <h2>Information</h2>
+            <ul>
+                <li>About Us</li>
+            </ul>
+            <ul>
+                <li>Contact Us</li>
+            </ul>
+            <ul>
+                <li>News</li>
+            </ul>
+            <ul>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>Collections</h2>
+            <ul>
+                <li>Wooden Chair</li>
+            </ul>
+            <ul>
+                <li>Royal cloth chair</li>
+            </ul>
+            <ul>
+                <li>Accent Chair</li>
+            </ul>
+            <ul>
+                <li>Bed</li>
+            </ul>
+            <ul>
+                <li>Hanging Lamp</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>My Accounts</h2>
+            <ul>
+                <li>My Accounts</li>
+            </ul>
+            <ul>
+                <li>Wishlist</li>
+            </ul>
+            <ul>
+                <li>Community</li>
+            </ul>
+            <ul>
+                <li>Order History</li>
+            </ul>
+            <ul>
+                <li>My card</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>News latter</h2>
+            <p>Subscribe to get latest news,update and,<br>information.</p>
+            <button class="bun">Subscribe</button>
+        </div>
+    </section>
+    <section class="icons">
+        <nav>
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-linkedin-in"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-youtube"></i>
+        </nav>
+        <p class="gray">@Copyright Desing And Developed By Theja.Mosuru</p>
+        <i class="fa-solid fa-phone-volume phn">+91 7989329021 / 8886779755</i>
+        </nav>
+    </section>
+    </Footer>
+</body>
+</html>

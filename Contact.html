@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT CLUB-Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    header{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+    }
+    header section{
+        flex:1;
+    }
+    header section img{
+        font-size: 10px;
+    }
+    header nav{
+        flex: 9;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        flex: 1;
+        list-style:none;
+    }header nav ul li a{
+        text-decoration:none;
+        color:black;
+        transition: all 0.5 linear;
+    }
+    header nav ul li a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    div{
+        flex: 3;
+    }
+    header div i{
+        margin:10px;
+    }
+    .bnr{
+        background: url(./images/service/about-background.png);
+        width:100%;
+        height:400px;
+        color: white;
+        position: relative;
+        bottom:40px;
+        opacity:0.9;
+    }
+    .us{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size:40px; 
+        position:relative;
+        left:550px;
+        top:150px;
+        font-family: 'Preahvihear', sans-serif;
+    }
+    .is{
+        position:relative;
+        left:680px;
+        top:130px;
+        font-size: 20px;
+    }
+    section div img{
+        height: 700px;
+        width: 670px;
+        
+    }
+    .body{
+        display: flex;
+        margin-top:150px;
+    }
+    .ask{
+        font-size: 40px;
+    }
+    .input{
+        margin-left: 100px;
+    }
+    [name ="cu"]{
+        width: 800px;
+        height: 70px;       
+        text-align: center;
+        border-radius: 30px;
+        font-size: 20px;
+        transition: all 1s linear;
+    }
+    [name ="cu"]:hover{
+        background: orange;
+        border: none    ;
+    }
+    [name ="ph"]{
+        background: rgb(175, 175, 172);
+        width: 300px;
+        height: 50px;
+        border-radius:15px;
+        font-size: 15px;
+    }
+    [placeholder *="y"]{
+        margin-left:50px;
+        position: relative;
+        bottom: 20px;
+    }
+    [type $="d"]{
+        width: 550px;
+    }
+    [placeholder ^="L"]{
+        margin-left: 50px;
+    }
+    .call{
+        background: orange;
+        color: white;
+        border: none;
+        width:580px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .ok{
+        width: 100px;
+        height: 25px;
+        background: orange;
+        color: white;
+        border: none;
+        border-radius:10px ;
+    }
+    .popup{
+        width: 300px;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        position: absolute;
+        text-align: center;
+        right: 600px;
+        top: 1400px;
+        padding: 10px;
+        visibility:visible;
+    }
+    .open-popup{
+        visibility: hidden;
+    }
+    .map{
+        margin: 80px 0px 50px 0px;
+    }
+    .foot{
+        display: flex;
+        font-size: 20px;
+        margin:0px 70px 0px 200px;
+    }
+    footer section div{
+        margin:30px;
+    }
+    footer section div ul{
+        list-style:none;   
+    }
+    footer section div ul li:hover{
+        translate:20px;
+        color:orange;
+        cursor: pointer;
+    }
+    .bun{
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background:orange;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+    }
+    .icons{
+        text-align: center;
+        background:aliceblue;
+        padding: 10px;
+        height: 150px;
+    }
+    footer section nav i{
+        margin: 20px;
+    }
+    footer section nav i:hover{
+        color: orange;
+    }
+    .ph{
+        display: flex;
+    }
+    .gray{
+        color:lightslategray;
+        word-spacing: 10px;
+    }
+    .phn{
+        font-size: 20px;
+        text-align: center;
+        color:lightslategray;
+        word-spacing:5px;
+    }
+</style>
+</head>
+<body class="global">
+    <!-- header portion starts -->
+    <header>
+        <section>
+            <img src="./images/service/logo (1).png" alt="logo" style="width: 230px;">
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/About.html">About</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Service.html">Services</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+    </header>
+    <!-- header portion ends -->
+    <!-- banner porton starts -->
+    <section class="bnr">
+        <h1 class="us">Contact Us</h1>
+        <p class="is">Home---Contact Us</p>
+    </section>
+    <!-- banner portion ends -->
+    <!-- body portion starts -->
+    <section class="body">
+        <div>
+            <img src="./images/contact/f1.jpg" alt="">
+        </div>
+        <div class="input">
+            <b class="ask">Ask Ergosphere</b>
+            <p>Drop us a message or call us and we will get back to you as soon as<br>possible...</p>
+            <form>
+                <input type="text" name="cu" placeholder="Call us"><br><br><br>
+                <input type="email" name="cu" placeholder="Email Id"><br><br><br>
+                <input type="text" name="cu" placeholder="Whatsapp Us"><br><br><br>
+                <input type="text" name="ph" placeholder="Name"><br><br>
+                <input type="text" name="ph" placeholder="Company Name"><br>
+                <input type="email id" name="ph" placeholder="Email"><br><br>
+                <input type="number" name="ph" placeholder="Phone Number" step="1" ><br><br>
+                <input type="Text" name="ph" placeholder="Location">
+            </form><br><br>
+            <div class="popup"  id="pop" onclick="pop">
+                <img src="./images/contact/correct.png" style="width: 50px; height:50px;">
+                <h2>Thank You!</h2>
+                <p>Thanks for reaching out us.shortyly we<br>will reach out you....</p>
+                <button class="ok" onclick="closepopup()">ok</button>
+            </div>
+            <button class="call" onclick="openpopup()">Request<br>a Call <br>Back</button>
+        </div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8114066703415!2d77.60786407411945!3d12.919839716012916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1548e290313f%3A0xfaf25026cfa3458d!2sAchieversIT%20Bangalore%20%7C%20%231%20Software%20Training%20Institute%20in%20India!5e0!3m2!1sen!2sin!4v1702534270983!5m2!1sen!2sin" width="1400" height="400" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    <!-- body portion ends -->
+    <!-- footer portion starts -->
+    <Footer>
+        <section class="foot">
+        <div class="inf">
+            <h2>Information</h2>
+            <ul>
+                <li>About Us</li>
+            </ul>
+            <ul>
+                <li>Contact Us</li>
+            </ul>
+            <ul>
+                <li>News</li>
+            </ul>
+            <ul>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>Collections</h2>
+            <ul>
+                <li>Wooden Chair</li>
+            </ul>
+            <ul>
+                <li>Royal cloth chair</li>
+            </ul>
+            <ul>
+                <li>Accent Chair</li>
+            </ul>
+            <ul>
+                <li>Bed</li>
+            </ul>
+            <ul>
+                <li>Hanging Lamp</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>My Accounts</h2>
+            <ul>
+                <li>My Accounts</li>
+            </ul>
+            <ul>
+                <li>Wishlist</li>
+            </ul>
+            <ul>
+                <li>Community</li>
+            </ul>
+            <ul>
+                <li>Order History</li>
+            </ul>
+            <ul>
+                <li>My card</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>News latter</h2>
+            <p>Subscribe to get latest news,update and,<br>information.</p>
+            <button class="bun">Subscribe</button>
+        </div>
+    </section>
+    <section class="icons">
+        <nav>
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-linkedin-in"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-youtube"></i>
+        </nav>
+        <p class="gray">@Copyright Desing And Developed By Theja.Mosuru</p>
+        <i class="fa-solid fa-phone-volume phn">+91 7989329021 / 8886779755</i>
+        </nav>
+    </section>
+    </Footer>
+    <script>
+        function pop(){
+            document.getElementsByClassName("call").classList.add("open-popup")
+        }
+
+        // function open-popup(){
+        //     popup.classlist.add("open.popup");
+        // }
+        // function close-popup(){
+        //     popup.classlist.remove("close.popup");
+        // }
+    </script>
+</body>
+</html>

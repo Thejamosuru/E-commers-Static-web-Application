@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT CLUB-About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    header{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+    }
+    header section{
+        flex:1;
+    }
+    header section img{
+        font-size: 10px;
+    }
+    header nav{
+        flex: 9;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        flex: 1;
+        list-style:none;
+    }header nav ul li a{
+        text-decoration:none;
+        color:black;
+    }
+    header nav ul li a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    header div{
+        flex: 3;
+    }
+    header div i{
+        margin:10px;
+    }
+    .bnr{
+        background: url(./images/about/about-background.png);
+        width:100%;
+        height:400px;
+        color: white;
+        position: relative;
+        bottom:40px;
+        opacity:0.9;
+    }
+    .us{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size:50px; 
+        position:relative;
+        left:550px;
+        top:150px;
+    }
+    .is{
+        position:relative;
+        left:680px;
+        top:130px;
+        font-size: 20px;
+    }
+    .bd{
+        display:flex;
+        margin:100px 0px 0px;
+    }
+    .mar{
+        margin:75px;
+    }
+    .our{
+        color: gray;
+        font-size: 20px;
+    }
+    .pou{
+        font-size:50px;
+        line-height:80px;   
+    }
+    .jus{
+        font-size:20px;
+        line-height:35px;
+    }
+    .com{
+        width:500px;
+        height:500px;
+        margin-left:30px;
+    }
+    .exp{
+        width:280px;
+        height:170px;
+        position: relative;
+        bottom:370px;
+        right:35px;
+        border-radius:10px;
+        background: orange;
+        color:white;
+        border: none;
+        font-size:40px;
+        padding:5px;
+    }
+    .rate{
+        display: flex;
+        justify-content: space-around;
+        font-size:20px;
+    }
+    .bold{
+        font-size:50px;
+    }
+    .clr{
+        font-size:20px;
+        color: orange;
+    }
+    .scl{
+        display:flex;
+        justify-content:space-between;
+        margin: 100px;
+        overflow:hidden;
+    }
+    .zoom{
+        transition: all 1s linear;
+        width:400px;
+        height:250px;
+        opacity:0.7;
+        object-fit: cover;
+    }
+    .btn{border:2px solid;
+        position: relative;
+        right:270px;
+        top:80px;
+        height:70px;
+        width: 120px;
+        text-align: center;
+        line-height:70px;
+        font-size: 20px;
+    }
+    .btn:hover{
+        background: orange;
+        color:white;
+        transition: all 1s linear;
+        border:none;
+        border-radius:10px;
+    }
+    .Inv{
+        background-image: url(./images/about/about-img.png);
+        width:100%;
+        height:400px;
+    }
+    .inv{
+        position: relative;
+        left: 190px;
+        top:150px;
+        font-weight:bold;
+    }
+    .the{
+        position: relative;
+        left: 190px;
+        top:150px;
+        font-size:40px;
+    }
+    .bn{
+        width:130px;
+        height:50px;
+        border-radius:10px;
+        border: none;
+        position: relative;
+        left:940px;
+        top: 61px;
+        color: orange;
+        font-size: 20px;
+    }
+    .bn:hover{
+        background: orange;
+        color: white;
+        transition: all 0.8s linear;
+    }
+    .bt{
+        width:130px;
+        height:50px;
+        border-radius:10px;
+        border: none;
+        background:orange;
+        color:white;
+        font-size: 20px;
+        position: relative;
+        left:940px;
+        top: 61px;
+    }.tm{
+        margin-top:50px;
+    }
+    .team{
+        font-size: 20px;
+        position: relative;
+        left: 600px;
+    }.whom{
+        font-size:40px;
+        position: relative;
+        left: 350px;
+        top:20px;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .home{
+        width:150px;
+        height:150px;
+        margin: 60px;
+    }
+    .home:hover{
+        transform: scale(1.5);
+        transition: all 1s linear;
+    }
+    .foot{
+        display: flex;
+        font-size: 20px;
+        margin:0px 120px 0px 200px;
+    }
+    footer section div{
+        flex: 1;
+        margin:20px;
+    }
+    footer section div ul{
+        list-style:none;   
+    }
+    footer section div ul li:hover{
+        translate:20px;
+        color:orange;
+        cursor: pointer;
+    }
+    .bun{
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background:orange;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+    }
+    .icons{
+        text-align: center;
+        background:aliceblue;
+        padding: 10px;
+        height: 150px;
+    }
+    footer section nav i{
+        margin: 20px;
+    }
+    footer section nav i:hover{
+        color: orange;
+    }
+    .ph{
+        display: flex;
+    }
+    .gray{
+        color:lightslategray;
+        word-spacing: 10px;
+    }
+    .phn{
+        font-size: 20px;
+        text-align: center;
+        color:lightslategray;
+        word-spacing:5px;
+    }
+</style>
+</head>
+<body>
+    <!-- header portion starts -->
+    <header>
+        <section>
+            <img src="./images/about/logo-white.png" alt="logo" style="width: 230px;">
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/About.html">About</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Service.html">Services</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+    </header>
+    <!-- header portion ends -->
+    <!-- banner porton starts -->
+    <section class="bnr">
+        <h1 class="us">About us</h1>
+        <p class="is">Home---About page</p>
+    </section>
+    <!-- banner portion ends -->
+    <!-- body portion starts -->
+    <section class="bd">
+        <nav class="mar">
+            <p class="our">OUR INFO</p>
+            <b class="pou">We Give You Complete Control Of Your Poultry Fields.</b>
+            <p class="jus">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat.</p>
+        </nav>
+        <div>
+            <img class="com" src="./images/about/ab.jpg" alt="logo">
+            <button class="exp">16+<br>Experence</button>
+        </div>
+    </section>
+    <section class="rate">
+        <div>
+            <b class="bold">2500</b><br>
+            <p class="clr">Products</p>
+        </div>
+        <div>
+            <b class="bold">1500</b><br>
+            <p class="clr">Dairect From factry</p>
+        </div>
+        <div>
+            <b class="bold">1280</b><br>
+            <p class="clr">Business Success</p>
+        </div>
+        <div>
+            <b class="bold">3020</b><br>
+            <p class="clr">Happy Clients</p>
+        </div>
+    </section>
+    <section class="scl">
+        <img src="./images/about/furnitures-1of service page.jpg" alt="" class="zoom">
+        <p class="btn">Read More</p>
+        <img src="./images/about/furnitures-2 of service page.jpeg" alt="" class="zoom">
+        <p class="btn">Read More</p>
+    </section>
+    <section class="Inv">
+        <p class="inv">OUR INVENTION</p>
+        <b class="the">Our Invention Is Always The<br> Best</b>
+        <button class="bn">Read More</button>
+        <button class="bt">Read More</button>
+    </section>
+    <section> 
+        <div class="tm">
+            <b class="team">OUR TEAM</b><br>
+            <b class="whom">Companies with whom we have tie-up</b>
+        </div>
+        <nav class="logo">
+            <img class="home" src="./images/about/ashmela-logo.jpeg" alt="">
+            <img class="home" src="http://127.0.0.1:5501/E-commerse-project/images/about.tai-up/img-4.jfif" alt="">
+            <img class="home" src="./images/about/img-5.webp" alt="">
+            <img class="home" src="./images/about/img-6.webp" alt="">
+            <img class="home" src="./images/about/img-8.jpg" alt="">
+        </nav>
+        <nav class="logo">
+            <img class="home" src="http://127.0.0.1:5501/E-commerse-project/images/about.tai-up/img-9.jfif" alt="">
+            <img class="home" src="http://127.0.0.1:5501/E-commerse-project/images/about.tai-up/img-11.jfif" alt="">
+            <img class="home" src="./images/about/logo -3.webp" alt="">
+            <img class="home" src="http://127.0.0.1:5501/E-commerse-project/images/about.tai-up/img-4.jfif" alt="">
+            <img class="home" src="./images/about/lotus-image.webp" alt="">
+        </nav>
+    </section>
+    <!-- body portion ends -->
+    <!-- footer portion starts -->
+    <Footer>
+        <section class="foot">
+        <div class="inf">
+            <h2>Information</h2>
+            <ul>
+                <li>About Us</li>
+            </ul>
+            <ul>
+                <li>Contact Us</li>
+            </ul>
+            <ul>
+                <li>News</li>
+            </ul>
+            <ul>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>Collections</h2>
+            <ul>
+                <li>Wooden Chair</li>
+            </ul>
+            <ul>
+                <li>Royal cloth chair</li>
+            </ul>
+            <ul>
+                <li>Accent Chair</li>
+            </ul>
+            <ul>
+                <li>Bed</li>
+            </ul>
+            <ul>
+                <li>Hanging Lamp</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>My Accounts</h2>
+            <ul>
+                <li>My Accounts</li>
+            </ul>
+            <ul>
+                <li>Wishlist</li>
+            </ul>
+            <ul>
+                <li>Community</li>
+            </ul>
+            <ul>
+                <li>Order History</li>
+            </ul>
+            <ul>
+                <li>My card</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h2>News latter</h2>
+            <p>Subscribe to get latest news,update and,information.</p>
+            <button class="bun">Subscribe</button>
+        </div>
+    </section>
+    <section class="icons">
+        <nav>
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-linkedin-in"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-youtube"></i>
+        </nav>
+        <p class="gray">@Copyright Desing And Developed By Theja.Mosuru</p>
+        <i class="fa-solid fa-phone-volume phn">+91 7989329021 / 8886779755</i>
+    </section>
+    </Footer>
+</body>
+</html>
